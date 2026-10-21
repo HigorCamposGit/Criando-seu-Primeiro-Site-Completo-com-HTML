@@ -53,7 +53,7 @@ O CSS foi criado em um **único arquivo externo** e importado em todas as págin
 * **Layout Flexbox (`display: flex`):** Utilizado na `.wrapper` para posicionar o menu lateral à esquerda (20%) e a área principal à direita (80%).
 * **Menu Interativo:** O fundo do menu recebeu um tom de azul claro e suave (`#ebf8ff`), enquanto os links foram estilizados como **botões em azul escuro** com efeito ao passar o mouse (`:hover`), dando destaque visual sem cansar a vista.
 * **Efeito Zebra em Tabelas:** Uso da regra `table tr:nth-child(even)` para alternar as cores das linhas da tabela, facilitando a leitura dos horários.
-* **Formulários Organizados:** Uso de `flex-direction: column` para alinhar os campos do formulário em fila indiana com espaçamentos regulares (`gap`).
+* **Formulários Organizados:** Uso de `flex-direction: column` para alinhar os campos do formulário em fila com espaçamentos regulares (`gap`).
 
 ---
 
