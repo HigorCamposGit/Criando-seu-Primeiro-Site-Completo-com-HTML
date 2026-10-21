@@ -1,0 +1,209 @@
+/* ESTILOS GERAIS DA PÁGINA (Zerando margens e definindo a fonte padrão) */
+
+/* Zera as margens padrão do navegador e define a fonte do site */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Fonte limpa e fácil de ler */
+    color: #333;                   /* Cor do texto principal (um cinza bem escuro) */
+}
+
+/* Deixa o fundo da página cinza claro e centraliza o bloco principal do site */
+body {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center; /* Centraliza a caixa .wrapper no meio da tela */
+}
+
+/* ESTRUTURA PRINCIPAL (O caixote que segura todo o site)*/
+
+/* Caixa principal com largura fixa que guarda o menu e o conteúdo lado a lado */
+.wrapper {
+    width: 1200px;
+    display: flex;                  
+    margin: 0 auto;                 /* Garante a centralização */
+    background-color: #ffffff;      /* Fundo branco */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* sombra bem suave em volta do site */
+}
+
+/* MENU LATERAL (Barra da esquerda com os botões) */
+
+/* Configuração da coluna do menu lateral */
+.menu {
+    width: 20%;                    
+    background-color: #ebf8ff;      /* Azul bem suave de fundo */
+    padding: 20px 15px;             /* Espaçamento interno para não colar nas bordas */
+    border-right: 1px solid #e2e8f0; /* Linha sutil separando o menu do conteúdo */
+}
+
+/* Título "Navegação" do menu */
+.menu h3 {
+    color: #0d2a35;
+    margin-top: 0;
+    font-size: 1.1rem;
+    border-bottom: 2px solid #cbd5e0; /* Risco decorativo embaixo do título */
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+/* Tira as bolinhas da lista não ordenada (<ul>) */
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Espaçamento entre cada item da lista */
+.menu ul li {
+    margin-bottom: 12px;
+}
+
+/* Transforma os links (<a>) em botões bonitos */
+.menu ul li a {
+    color: #ffffff;                  /* Texto do botão em branco */
+    background-color: #0d2a35;       /* Fundo do botão no mesmo tom escuro do rodapé */
+    text-decoration: none;           /* Tira o sublinhado padrão dos links */
+    font-weight: bold;               /* Deixa o texto em negrito */
+    display: block;                  /* Faz o link ocupar toda a caixa do botão */
+    padding: 12px 15px;              /* Altura e largura interna do botão */
+    border-radius: 6px;              /* Deixa as pontas do botão arredondadas */
+    text-align: center;              /* Centraliza o texto no botão */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra levinha embaixo do botão */
+    transition: all 0.2s ease-in-out; /* Animação suave para quando passar o mouse */
+}
+
+/* Efeito quando passa o mouse por cima do botão (Hover) */
+.menu ul li a:hover {
+    background-color: #1a4a5e;       /* Azul um pouco mais claro para destacar */
+    color: #ffffff;                  /* Mantém a cor da letra branca */
+    transform: translateY(-2px);     /* Dá um efeito leve de "subir" o botão */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15); /* Aumenta um pouquinho a sombra */
+}
+
+/* ÁREA PRINCIPAL DA DIREITA (Header, Conteúdo e Rodapé) */
+
+/* Coluna da direita que segura o cabeçalho, o conteúdo e o rodapé */
+.main {
+    display: flex;
+    flex-flow: column;               /* Organiza as divs em fila (uma embaixo da outra) */
+    width: 80%;                      /* Ocupa os outros 80% da largura do site */
+}
+
+/* Cabeçalho que segura a imagem da página */
+.header {
+    background-color: #0d2a35;
+    min-height: 180px;
+    overflow: hidden;                /* Esconde o que passar do tamanho do cabeçalho */
+}
+
+/* Estilização da imagem dentro do header */
+.header img {
+    width: 100%;                     /* Faz a imagem preencher toda a largura */
+    height: 200px;                   /* Fixa a altura da imagem */
+    object-fit: cover;               /* Ajusta a imagem sem distorcer ou esticar */
+    display: block;
+}
+
+/* Área central onde fica o texto de cada página */
+.content {
+    background-color: #ffffff;
+    min-height: 350px;                /* Garante uma altura mínima para a página */
+    padding: 30px;                   /* Espaço interno para o texto não colocar na borda */
+}
+
+/* Estilo para os títulos principais H1 e H2 do conteúdo */
+.content h1, .content h2 {
+    color: #1a4a5e;                  /* Tom de azul escuro profissional para os títulos */
+}
+
+/* ESTILO DAS TABELAS (Usada na página de horários) */
+
+table {
+    width: 100%;
+    border-collapse: collapse;      /* Gruda as bordas das células para não ficar duplo */
+    margin-top: 20px;
+}
+
+/* Estilo das células do cabeçalho (th) e do corpo (td) */
+table th, table td {
+    border: 1px solid #ccc;          /* Bordinha cinza simples */
+    padding: 12px;                   /* Espaçamento dentro de cada quadradinho da tabela */
+    text-align: center;              /* Centraliza o texto das tabelas */
+}
+
+/* Cabeçalho da tabela (Linha de cima com os títulos) */
+table th {
+    background-color: #1a4a5e;      /* Fundo azul para destacar os títulos */
+    color: white;                    /* Letras brancas */
+}
+
+/* Efeito zebra: pinta as linhas pares da tabela com um cinza bem clarinho */
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* ESTILIZAÇÃO DE FORMULÁRIOS (Usada na página de contato) */
+
+form {
+    display: flex;
+    flex-direction: column;         /* Coloca um campo do formulário embaixo do outro */
+    gap: 15px;                      /* Espaçamento entre cada campo do formulário */
+    max-width: 600px;                /* Não deixa o formulário ficar largo demais */
+    margin-top: 20px;
+}
+
+/* Rótulos/Textos que ficam em cima dos campos (Nome, E-mail, etc.) */
+form label {
+    font-weight: bold;              /* Texto em negrito */
+    margin-bottom: 5px;
+}
+
+/* Estilo das caixas de texto onde o usuário digita */
+form input, form textarea {
+    width: 100%;
+    padding: 10px;                  /* Espaço interno para o texto não grudar no contorno */
+    border: 1px solid #ccc;
+    border-radius: 4px;             /* Cantos levemente arredondados */
+    box-sizing: border-box;         /* Mantém a largura correta incluindo a borda */
+    font-size: 1rem;
+}
+
+/* Alinha os botões "Enviar" e "Limpar" lado a lado */
+.button-group {
+    display: flex;
+    gap: 10px;                      /* Espacinho entre os dois botões */
+}
+
+/* Estilo genérico para todos os botões do formulário */
+form button {
+    padding: 10px 20px;
+    border: none;                   /* Tira a borda padrão feia do navegador */
+    border-radius: 4px;
+    cursor: pointer;                /* Transforma o ponteiro do mouse em mãozinha */
+    font-weight: bold;
+    color: white;
+}
+
+/* Botão de Enviar (Azul escuro) */
+form button[type="submit"] {
+    background-color: #1a4a5e;
+}
+
+/* Botão de Limpar (Cinza neutro) */
+form button[type="reset"] {
+    background-color: #888;
+}
+
+/* RODAPÉ / FOOTER (Informações no final da página) */
+
+.footer {
+    background-color: #0d2a35;      /* Fundo azul bem escuro para fechar a página */
+    color: white;                    /* Texto branco */
+    padding: 20px;
+    text-align: center;              /* Centraliza as informações do rodapé */
+    font-size: 0.9rem;              /* Texto ligeiramente menor */
+}
+
+.footer p {
+    margin: 5px 0;                   /* Espaçamento pequeno entre as linhas do rodapé */
+}

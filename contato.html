@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Cuidar + | Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="menu">
+            <h3>Navegação</h3>
+            <ul>
+                <li><a href="index.html">Página Principal</a></li>
+                <li><a href="sobre.html">Sobre a Clínica</a></li>
+                <li><a href="horario.html">Horário de Atendimento</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div class="main">
+            <header class="header">
+                <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=1000&h=200&q=80" alt="Atendimento e recepção da clínica cuidar +">
+            </header>
+
+            <main class="content">
+                <h1>Fale Conosco</h1>
+                
+                <h2>Informações de Contato</h2>
+				<p><strong>Clínica Cuidar +</strong> | Cuidados integrais para a sua saúde</p>
+                 <p>Telefone: (xx) 1234-5678 | WhatsApp: (xx) 9123-4567</p>
+                <p>Av. Moai, nº 1000 - Hanga Roa, Ilha de Páscoa - CEP: 12345-678</p>
+               
+                <h2>Nossa Localização</h2>
+                <!-- Google Maps em Iframe -->
+				<iframe 
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58280.23351286828!2d-109.4281622288075!3d-27.12592751508933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95c4c11432f81907%3A0xe5a30559a41db80f!2sIlha%20de%20P%C3%A1scoa!5e0!3m2!1spt-BR!2sbr!4v1700000000000" 
+					width="100%" 
+					height="250" 
+					style="border:0;" 
+					allowfullscreen="" 
+					loading="lazy">
+				</iframe>
+
+                <h2>Envie uma Mensagem</h2>
+                <!-- Formulário com os campos obrigatórios -->
+                <form action="#" method="POST">
+                    <div>
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    </div>
+
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                    </div>
+
+                    <div>
+                        <label for="assunto">Assunto:</label>
+                        <input type="text" id="assunto" name="assunto" placeholder="Assunto da mensagem" required>
+                    </div>
+
+                    <div>
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem aqui..." required></textarea>
+                    </div>
+
+                    <div class="button-group">
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpar</button>
+                    </div>
+                </form>
+            </main>
+				<!--  Footer padrões em todas as páginas. -->
+            <footer class="footer">
+                <p><strong>Clínica Cuidar +</strong> | Cuidados integrais para a sua saúde</p>
+                <p>Telefone: (xx) 1234-5678 | WhatsApp: (xx) 9123-4567</p>
+                <p>Av. Moai, nº 1000 - Hanga Roa, Ilha de Páscoa - CEP: 12345-678</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
